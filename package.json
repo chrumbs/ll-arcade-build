@@ -1,20 +1,11 @@
 {
-  "name": "@finsweet/developer-starter",
+  "name": "@chrumbs/ll-arcade-build",
   "version": "0.0.0",
-  "description": "Developer starter template for Finsweet projects.",
-  "homepage": "https://github.com/finsweet/developer-starter#readme",
+  "description": "Tools for LL Arcade site.",
   "license": "ISC",
   "keywords": [],
   "author": {
-    "name": "Finsweet",
-    "url": "https://finsweet.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/finsweet/developer-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/finsweet/developer-starter/issues"
+    "name": "Chris JSV"
   },
   "type": "module",
   "main": "src/index.ts",
@@ -32,7 +23,8 @@
     "test": "playwright test",
     "test:ui": "playwright test --ui",
     "release": "changeset publish",
-    "update": "pnpm update -i -L -r"
+    "update": "pnpm update -i -L -r",
+    "deploy:feature": "pnpm build && git add . && read -p 'Commit message: ' msg && git commit -m \"$msg\" && git push"
   },
   "devDependencies": {
     "@changesets/changelog-git": "^0.2.0",
