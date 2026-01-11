@@ -2,6 +2,7 @@
   "name": "@chrumbs/ll-arcade-build",
   "version": "0.0.0",
   "description": "Tools for LL Arcade site.",
+  "packageManager": "pnpm@10.14.0",
   "license": "ISC",
   "keywords": [],
   "author": {
